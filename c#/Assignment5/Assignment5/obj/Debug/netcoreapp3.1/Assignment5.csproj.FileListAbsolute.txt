@@ -1,0 +1,10 @@
+C:\Users\moaya\source\repos\Assignment5\Assignment5\bin\Debug\netcoreapp3.1\Assignment5.exe
+C:\Users\moaya\source\repos\Assignment5\Assignment5\bin\Debug\netcoreapp3.1\Assignment5.deps.json
+C:\Users\moaya\source\repos\Assignment5\Assignment5\bin\Debug\netcoreapp3.1\Assignment5.runtimeconfig.json
+C:\Users\moaya\source\repos\Assignment5\Assignment5\bin\Debug\netcoreapp3.1\Assignment5.runtimeconfig.dev.json
+C:\Users\moaya\source\repos\Assignment5\Assignment5\bin\Debug\netcoreapp3.1\Assignment5.dll
+C:\Users\moaya\source\repos\Assignment5\Assignment5\bin\Debug\netcoreapp3.1\Assignment5.pdb
+C:\Users\moaya\source\repos\Assignment5\Assignment5\obj\Debug\netcoreapp3.1\Assignment5.AssemblyInfoInputs.cache
+C:\Users\moaya\source\repos\Assignment5\Assignment5\obj\Debug\netcoreapp3.1\Assignment5.AssemblyInfo.cs
+C:\Users\moaya\source\repos\Assignment5\Assignment5\obj\Debug\netcoreapp3.1\Assignment5.dll
+C:\Users\moaya\source\repos\Assignment5\Assignment5\obj\Debug\netcoreapp3.1\Assignment5.pdb

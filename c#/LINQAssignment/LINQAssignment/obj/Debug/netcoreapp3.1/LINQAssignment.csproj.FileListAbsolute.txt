@@ -1,0 +1,11 @@
+C:\Users\moaya\source\repos\LINQAssignment\LINQAssignment\bin\Debug\netcoreapp3.1\LINQAssignment.exe
+C:\Users\moaya\source\repos\LINQAssignment\LINQAssignment\bin\Debug\netcoreapp3.1\LINQAssignment.deps.json
+C:\Users\moaya\source\repos\LINQAssignment\LINQAssignment\bin\Debug\netcoreapp3.1\LINQAssignment.runtimeconfig.json
+C:\Users\moaya\source\repos\LINQAssignment\LINQAssignment\bin\Debug\netcoreapp3.1\LINQAssignment.runtimeconfig.dev.json
+C:\Users\moaya\source\repos\LINQAssignment\LINQAssignment\bin\Debug\netcoreapp3.1\LINQAssignment.dll
+C:\Users\moaya\source\repos\LINQAssignment\LINQAssignment\bin\Debug\netcoreapp3.1\LINQAssignment.pdb
+C:\Users\moaya\source\repos\LINQAssignment\LINQAssignment\obj\Debug\netcoreapp3.1\LINQAssignment.csprojAssemblyReference.cache
+C:\Users\moaya\source\repos\LINQAssignment\LINQAssignment\obj\Debug\netcoreapp3.1\LINQAssignment.AssemblyInfoInputs.cache
+C:\Users\moaya\source\repos\LINQAssignment\LINQAssignment\obj\Debug\netcoreapp3.1\LINQAssignment.AssemblyInfo.cs
+C:\Users\moaya\source\repos\LINQAssignment\LINQAssignment\obj\Debug\netcoreapp3.1\LINQAssignment.dll
+C:\Users\moaya\source\repos\LINQAssignment\LINQAssignment\obj\Debug\netcoreapp3.1\LINQAssignment.pdb
