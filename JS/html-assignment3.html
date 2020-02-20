@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="details.js"></script>
+	<title></title>
+</head>
+<body>
+	<form method="post" action="#">
+		<label for="firstname">First Name</label><br>
+		<input type="text" id="firstname"><br><br>
+		<label for="lastname">Last Name</label><br>
+		<input type="text" id="lastname"><br><br>
+		<label for="email">Email</label><br>
+		<input type="text" id="email"><br><br>
+		<label for="contactnumber">Contact Number</label><br>
+		<input type="text" id="contactnumber"><br><br>
+		<label for="address">Address</label><br>
+		<textarea rows="4" cols="20" id="address"></textarea><br><br>
+		<label for="username">Username</label><br>
+		<input type="text" id="username"><br><br>
+		<label for="password">Password</label><br>
+		<input type="password" id="password"><br><br>
+		<label>Gender</label><br>
+		<input type="radio" id="male" name="gender"><label>male</label><br>
+		<input type="radio"  id="female" name="gender"><label>Female</label>
+		<br><br>
+		<label>Qualification</label><br>
+		<select id="qualification" name="qualification">
+			
+		</select><br><br>
+		<label>Experiece</label><br>
+		<select id="experience" name="experience">
+			
+		</select><br><br>
+
+		<label>Codinglanguage</label><br>
+		<div id="codinglanguage" name="codinglanguage"></div>
+		<br><button type="submit" onclick="getdetails()">submit</button>
+
+	</form>
+
+</body>
+<script type="text/javascript">
+	
+	var Cldiv=document.getElementById('codinglanguage');
+var qualification=["SSC","HSC","Graduate","Masters","PHD"]
+var Experiece=["Fresher","1year","2year","3year"]	
+var select_exp=document.getElementById('experience');
+var select_qua=document.getElementById('qualification')
+
+var codinglanguages=[];   
+
+
+    for(i=0;Experiece[i]!=null;i++)
+    {
+
+    	var ele= document.createElement('option');
+    	ele.value=i;
+    	ele.innerHTML=Experiece[i];
+    	select_exp.appendChild(ele);
+    }
+
+   
+    for(i=0;qualification[i]!=null;i++)
+    {
+
+    	var ele= document.createElement('option');
+    	ele.value=i;
+    	ele.innerHTML=qualification[i];
+    	select_qua.appendChild(ele);
+    }
+
+	function codinglanguage(name,ischecked)
+	{
+		this.name=name;
+		this.ischecked=ischecked;
+	}
+
+	var lang1=new codinglanguage("C#",true);
+	var lang2=new codinglanguage("C",false);
+	var lang3=new codinglanguage("C++",false);
+	var lang4=new codinglanguage("php",false);
+	var lang5=new codinglanguage("java",true);
+
+  	codinglanguages.push(lang1,lang2,lang3,lang4,lang5);
+
+  	for(i=0;codinglanguages[i]!=null;i++)
+  	{
+  		var checkbox=document.createElement('input');
+  		
+  		checkbox.type="checkbox";
+  		checkbox.name=codinglanguages[i].name;
+  		checkbox.nodeValue=codinglanguages[i].name;
+  		checkbox.checked=codinglanguages[i].ischecked;
+  		checkbox.id=i;
+
+  		var label=document.createElement('label');
+  		label.htmlFor=i;
+
+
+  		label.appendChild(document.createTextNode(codinglanguages[i].name))
+  		Cldiv.appendChild(checkbox);
+  		Cldiv.appendChild(label);
+
+  	}
+
+</script>
+
+</html>
