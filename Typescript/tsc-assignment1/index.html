@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <script src="./myCompiledOutput/app2.js"></script>
+    <script src="./myCompiledOutput/Student.js"></script>
+    <script src="./myCompiledOutput/School.js"></script>
+             
+    <link rel="stylesheet" type="text/css" href="./css/mystyle.css"/>
+</head>
+
+<body>
+    <h3>Student Management</h3>
+    <div><label>FindStudents</label><input type="text" id="searchitem" />
+    <button type="button" onclick="getstudents()">Search</button>
+    <fieldset><legend>Students</legend><div id="studentinfo"></div></fieldset>
+    </div>
+
+    <div>
+        <fieldset title="Studentinfo">
+            <legend>Studentinfo</legend>
+            <label>Name</label><input class="textbox" type="text" id="Name"/><br />
+            <label>Age</label><input class="textbox" type="text" id="Age"/><br />
+            <label>Class</label><input class="textbox" type="text" id="Class" /><br />
+            <label>School<input class="textbox" type="text" id="School" /> </label><br />
+            <label>Favourite sub<input class="textbox" type="text" id="favourite_sub"/></label>
+            <br />
+            <button type="button" id="button"  value="" onclick="addstudent()">Add Student</button>
+        </fieldset>
+    </div>
+
+
+</body>
+
+</html>

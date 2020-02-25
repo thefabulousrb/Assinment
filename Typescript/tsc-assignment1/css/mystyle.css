@@ -1,0 +1,29 @@
+body{
+    background-color:aquamarine;
+    text-align:center;
+}
+
+.textbox{
+
+    background-color:darksalmon;
+    margin:4px;
+    border:solid thin;
+    border-color:brown;
+    border-radius:50px;
+    text-justify:auto;
+
+}
+
+fieldset{
+
+    text-align:center;  
+    width:25%;
+}
+#button{
+
+    margin-left:70%;
+    background-color:darkcyan;
+    border:solid 1px white;
+    color:white;
+
+}
