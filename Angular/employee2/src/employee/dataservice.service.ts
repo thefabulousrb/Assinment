@@ -73,9 +73,10 @@ export class DataserviceService {
     }
 
     deleteemployee(id:number){
-      let emp=this.allemployees.find(e=>e.id==id);
-      let index=this.allemployees.indexOf(emp);
-      this.allemployees.splice(index);
+      // let emp=this.allemployees.find(e=>e.id==id);
+      // let index=this.allemployees.indexOf(emp);
+      // console.log(index);
+      this.allemployees.splice(id,1);
 
     }
 
