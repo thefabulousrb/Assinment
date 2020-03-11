@@ -1,0 +1,50 @@
+[{
+  "id":1,
+    "Firstname":"Ayazzzz",
+    "Lastname":"Arbi",
+    "Email":"Aarbi.ayaz.1@gmail.com",
+    "Username":"the_fabilous_rb",
+    "Password":"aA22248163264$",
+    "Contact_number":9925728721,
+    "Address":"my adddress",
+    "Gender":"Male",
+    "Qualification":"bechlor",
+    "Experience":"Fresher",
+    "Languages":["java","python"],
+    "imageUrl":"assets/images/emp1.png"
+  },
+
+  {
+    "id":2,
+    "Firstname":"Ayaz2",
+  "Lastname":"Arbi2",
+  "Email":"Aarbi.ayaz.2@gmail.com",
+  "Username":"the_fabilous_rb2",
+  "Password":"aA22248163264ds2$",
+  "Contact_number":9925728722,
+  "Address":"my adddress 2",
+  "Gender":"male",
+  "Qualification":"Bechlor",
+  "Experience":"Fresher",
+  "Languages":["java","python"],
+  "imageUrl":"assets/images/emp2.png"
+
+  },
+
+  {
+    "id":3,
+    "Firstname":"Ayaz3",
+    "Lastname":"Arbi3",
+    "Email":"Aarbi.ayaz.3@gmail.com",
+    "Username":"the_fabilous_rb3",
+    "Password":"aA22248163264$",
+    "Contact_number":9925728723,
+    "Address":"my adddress3",
+    "Gender":"male",
+    "Qualification":"Bechlor",
+    "Experience":"Fresher",
+    "Languages":["java","python"],
+    "imageUrl":"assets/images/emp3.jpg"
+  }
+
+  ]

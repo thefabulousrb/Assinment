@@ -1,0 +1,55 @@
+
+<div class='card'>
+<div class='card-header'>
+{{ Employee.Firstname}}
+</div>
+
+<div class='col-md-4' style="float:left;">
+  <img class='center-block img-responsive'
+       [style.width.px]='200'
+       [style.margin.px]='2'
+       [src]='Employee.imageUrl'
+       [title]='Employee.Firstname'>
+</div>
+
+
+<div  class='card-body'>
+<div class='row'>
+ <div class='col-md-8'>
+   <div class='row'>
+     <div class='col-md-4'>Name:</div>
+     <div class='col-md-8'>{{Employee.Firstname+Employee.Lastname}}</div>
+   </div>
+   <div class='row'>
+     <div class='col-md-4'>Email:</div>
+     <div class='col-md-8'>{{Employee.Email}}</div>
+   </div>
+   <div class='row'>
+     <div class='col-md-4'>Address:</div>
+     <div class='col-md-8'>{{Employee.Address}}</div>
+   </div>
+   <div class='row'>
+     <div class='col-md-4'>Coding languages:</div>
+     <div class='col-md-8'>{{Employee.Languages}}</div>
+   </div>
+   <div class='row'>
+     <div class='col-md-4'>Gender:</div>
+     <div class='col-md-8'>{{Employee.Gender}}</div>
+   </div>
+   <div class='row'>
+
+ </div>
+
+
+  </div>
+</div>
+
+<div class='card-footer'>
+       <a href="#" [routerLink]="['/employee',Id,'edit']" routerLinkActive="router-link-active"  class="btn btn-info" role="button">Edit</a>
+       &nbsp;<a href="#" [routerLink]="['/employee']" routerLinkActive="router-link-active"  class="btn btn-info" role="button">back</a>
+</div>
+</div>
+<div>
+
+
+

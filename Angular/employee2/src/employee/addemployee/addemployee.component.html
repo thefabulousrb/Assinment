@@ -1,0 +1,100 @@
+<fieldset style="width: 50%;">
+  <legend align="center" >Employee Details</legend>
+  <form #form='ngForm' (ngSubmit)="submitform(form)">
+      <div class="form-group">
+
+     <label for="Firstname">First Name</label>
+     <input type="text" class="form-control" id="Firstname" pattern="^[a-zA-Z]*$" name="firstname" minlength="3" maxlength="20" placeholder="Firstname" #name="ngModel" [(ngModel)]="employee.Firstname" required [class.field-error]="name.invalid && name.touched" >
+   </div>
+   <div class="alert alert-danger" [hidden]="name.valid || name.untouched">
+     enter valid name which only contains alphabets and has atleast 3 charaters and atmost 20
+   </div>
+   <div class="form-group">
+     <label for="Lastname">Last Name</label>
+     <input type="text" class="form-control" id="Lastname" placeholder="lastname" name="lastname" minlength="3" maxlength="20" [(ngModel)]="employee.Lastname" #lname="ngModel" [class.field-error]="lname.touched && lname.invalid" required>
+   </div>
+   <div class="alert alert-danger" [hidden]="lname.valid || lname.untouched">
+    enter valid name which only contains alphabets and has atleast 3 charaters and atmost 20
+   </div>
+
+   <div class="form-group">
+     <label for="Email">Email</label>
+     <input type="email"  class="form-control" id="Email" name="email" placeholder="Email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" [(ngModel)]="employee.Email" #email="ngModel" [class.field-error]="email.invalid && email.touched"required>
+   </div>
+   <div class="alert alert-danger" [hidden]="email.valid || email.untouched">
+     enter valid email
+   </div>
+
+   <div class="form-group">
+     <label for="Contactnumber">Contact Number</label>
+     <input type="tel" minlength="10" maxlength="10" pattern="^[0-9]*$" class="form-control" id="Contactnumber" name="contactnumber" placeholder="Contactnumber" [(ngModel)]="employee.Contact_number"  #cn="ngModel" [class.field-error]="cn.invalid && cn.touched" required>
+   </div>
+   <div class="alert alert-danger" [hidden]="cn.valid || cn.untouched">
+     enter valid contact num
+   </div>
+
+   <div class="form-group">
+
+     <label for="Address">Address</label>
+     <textarea class="form-control" id="Address" rows="3" #add="ngModel" name="address" placeholder="Address" [(ngModel)]="employee.Address" [class.field-error]="add.invalid && add.touched" required></textarea>
+   </div>
+   <div class="alert alert-danger" [hidden]="add.valid || add.untouched">
+     enter valid address i.e"abc@mymail.com"
+   </div>
+
+   <div class="form-group">
+     <label for="Username">Username</label>
+     <input type="text" class="form-control" id="Username" pattern="^[a-z0-9_-]{6,20}$" #usr="ngModel" minlength="6" maxlength="20" name="username" placeholder="Username" [(ngModel)]="employee.Username" [class.field-error]="usr.invalid && usr.touched"required >
+   </div>
+   <div class="alert alert-danger" [hidden]="usr.valid || usr.untouched">
+     enter username which contains atleast 6 and atmost 20 character
+   </div>
+
+   <div class="form-group">
+     <label for="Password">Password</label>
+     <input type="password" class="form-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" #pass="ngModel" id="Password" name="password" placeholder="Password" [(ngModel)]="employee.Password" [class.field-error]="pass.invalid && pass.touched"required
+     >
+   </div>
+   <div class="alert alert-danger" [hidden]="pass.valid || pass.untouched">
+     Password Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters
+   </div>
+
+   <div class="btn-group">
+     <label class="btn btn-primary" [(ngModel)]="employee.Gender" name="gender"
+             btnRadio="male" tabindex="0" value="male" role="button" #gender="ngModel">Male</label>
+     <label class="btn btn-primary" [(ngModel)]="employee.Gender" name="gender"
+             btnRadio="female" tabindex="0" value="female" role="button" #gender="ngModel">Female</label>
+   </div>
+ <div class="form-group">
+   <label for="Qualification">Qualification</label>
+     <select id="Qualification" class="custom-select" #qual="ngModel"name="qualification" [(ngModel)]="employee.Qualification" required [class.field-error]="qual.invalid && qual.touched">
+     <option *ngFor="let type of Qualification" >{{type}}</option>
+
+   </select>
+ </div>
+
+ <div class="form-group">
+   <label for="Experience">Experience</label>
+     <select id="Experience" #exp="ngModel" class="custom-select" name="experience" [(ngModel)]="employee.Experience" required [class.field-error]="exp.invalid && exp.touched">
+     <option selected *ngFor="let exp of Experience">{{exp}}</option>
+
+   </select>
+ </div>
+
+ <label>Coding Language</label>
+
+     <div id="checkbox" *ngFor="let Language of Languages">
+       <input  type="checkbox"  name={{Language}} id={{Language}} ngModel>
+       <label for={{Language}} >{{Language}}</label>
+     </div>
+
+
+   <input type="submit" class="btn btn-primary" [disabled]="!form.valid">
+
+ </form>
+ </fieldset>
+ {{form.value|json}}
+
+
+
+

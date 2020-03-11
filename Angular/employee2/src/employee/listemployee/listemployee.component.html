@@ -1,0 +1,30 @@
+<div class='card'>
+  <div class='card-header'>
+    {{Pagetitle}}
+  </div>
+    <div class='table-responsive'>
+      <table class='table'>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Contactnumber</th>
+            <th>Action</th>
+          </tr>
+          </thead>
+        <tbody>
+
+          <tr *ngFor="let emp of Employees">
+            <td><a [routerLink]="['/employee',emp.id]" routerLinkActive="router-link-active"  href="#">{{emp.Firstname}}</a></td>
+            <td>{{emp.Email}}</td>
+            <td>{{emp.Contact_number}}</td>
+            <td><a href="#" [routerLink]="['/employee',emp.id,'edit']" routerLinkActive="router-link-active"  class="btn btn-info" role="button">Edit</a></td>
+            <td><button  (click)="deleteemployee()" class="btn btn-info" role="button">Delete</button></td>
+          </tr>
+
+           </tbody>
+      </table>
+    </div>
+  </div>
+
+
