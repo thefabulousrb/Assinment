@@ -25,8 +25,8 @@ export class DataserviceService {
     "imageUrl":"assets/images/emp1.png"},
     {
       "id":2,
-      "Firstname":"Ayaz2",
-    "Lastname":"Arbi2",
+      "Firstname":"Ayazz",
+    "Lastname":"Arbii",
     "Email":"Aarbi.ayaz.2@gmail.com",
     "Username":"the_fabilous_rb2",
     "Password":"aA22248163264ds2$",
@@ -39,8 +39,8 @@ export class DataserviceService {
     "imageUrl":"assets/images/emp2.png"
 
     },{"id":3,
-    "Firstname":"Ayaz3",
-    "Lastname":"Arbi3",
+    "Firstname":"Ayaz",
+    "Lastname":"Arbiii",
     "Email":"Aarbi.ayaz.3@gmail.com",
     "Username":"the_fabilous_rb3",
     "Password":"aA22248163264$",

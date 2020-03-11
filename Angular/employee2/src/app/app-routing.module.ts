@@ -8,13 +8,14 @@ import { AddemployeeComponent } from 'employee/addemployee/addemployee.component
 
 
 const routes: Routes = [
-  {path:"home",component:HomeComponent},
+{path:"home",component:HomeComponent},
 {path:"employee",component:ListemployeeComponent},
 {path:"employee/:id",component:DetailemployeeComponent},
 {path:"employee/:id/edit",component:EditemployeeComponent},
-{path:"add",component:AddemployeeComponent,
-
-}]
+{path:"add",component:AddemployeeComponent},
+{path:"",component:HomeComponent},
+{path:"*",component:HomeComponent}
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

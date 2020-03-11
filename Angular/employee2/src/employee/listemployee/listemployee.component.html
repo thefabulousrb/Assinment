@@ -19,7 +19,7 @@
             <td>{{emp.Email}}</td>
             <td>{{emp.Contact_number}}</td>
             <td><a href="#" [routerLink]="['/employee',emp.id,'edit']" routerLinkActive="router-link-active"  class="btn btn-info" role="button">Edit</a></td>
-            <td><button  (click)="deleteemployee()" class="btn btn-info" role="button">Delete</button></td>
+            <td><button   (click)="deleteemployee(emp)" class="btn btn-info" role="button">Delete</button></td>
           </tr>
 
            </tbody>

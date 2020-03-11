@@ -24,12 +24,11 @@ employee:IEmpolyee;
 
 
 }
-deleteemployee(){
-
-  if(confirm(`Do you really want to delete${this.employee.Firstname}`)){
-   this.dataservice.deleteemployee(3);
-   this.route.navigate(['/employee']);
-  }
+deleteemployee(emp:IEmpolyee){
+  if(confirm(`Do you really want to delete this employee`)){
+   this.dataservice.deleteemployee(emp.id);
+  this.route.navigate(['/employee']);
+   }
 
 }
 
