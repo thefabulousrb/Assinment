@@ -71,6 +71,7 @@ this.employee=this.dataservice.getemployee(this.Id);
       }
 
   this.dataservice.saveemployee(this.employee);
+  this.router.navigate(['/employee']);
 
 
  }
