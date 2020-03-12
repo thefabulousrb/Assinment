@@ -43,6 +43,12 @@ export class AddemployeeComponent implements OnInit {
     }
 
     submitform(form:NgForm){
+     if(form.value.gender==null){
+
+      alert("please select gender");
+      return false;
+     }
+
       let count=4;
       this.employee.id=count;
       this.employee.imageUrl="assets/images/emp1.png"

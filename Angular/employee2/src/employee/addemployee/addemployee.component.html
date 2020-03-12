@@ -1,6 +1,6 @@
 <fieldset style="width: 50%;">
   <legend align="center" >Employee Details</legend>
-  <form #form='ngForm' (ngSubmit)="submitform(form)">
+  <form #form='ngForm'  (ngSubmit)="submitform(form)">
       <div class="form-group">
 
      <label for="Firstname">First Name</label>
@@ -84,7 +84,7 @@
  <label>Coding Language</label>
 
      <div id="checkbox" *ngFor="let Language of Languages">
-       <input  type="checkbox"  name={{Language}} id={{Language}} ngModel>
+       <input  type="checkbox"  name={{Language}} id={{Language}} ngModel required>
        <label for={{Language}} >{{Language}}</label>
      </div>
 
