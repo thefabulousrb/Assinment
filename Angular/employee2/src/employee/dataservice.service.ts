@@ -73,17 +73,17 @@ export class DataserviceService {
     }
 
     deleteemployee(id:number){
-      // let emp=this.allemployees.find(e=>e.id==id);
-      // let index=this.allemployees.indexOf(emp);
-      // console.log(index);
-      this.allemployees.splice(id,1);
+    //let emp=this.allemployees.find(e=>e.id==id);
+   // let index=this.allemployees.indexOf(emp);
+    //console.log(index);
+    this.allemployees.splice(id,1);
 
     }
 
   // getemployees():Observable<IEmpolyee[]>{
   //   return this.http.get<IEmpolyee[]>(this.productUrl);
 
-  // }
+  // }ohhk
   // getemployee(id:number):Observable<IEmpolyee>{
 
   //   return this.getemployees().pipe(map((employees:IEmpolyee[])=>employees.find(e=>e.id==id))

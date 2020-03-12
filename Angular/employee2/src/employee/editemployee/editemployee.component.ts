@@ -54,7 +54,7 @@ this.employee=this.dataservice.getemployee(this.Id);
 
 
  saveemployee(form:NgForm){
-      if(form.value.C==true){
+      if(form.control.value==true){
           this.employee.Languages.push("C");
       }
       if(form.value.Python==true){
