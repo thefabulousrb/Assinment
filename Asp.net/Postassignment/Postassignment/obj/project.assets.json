@@ -4964,11 +4964,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\moaya\\source\\repos\\Postassignment\\Postassignment\\Postassignment.csproj",
+      "projectUniqueName": "E:\\Internship-2020\\copy\\Assinment\\Asp.net\\Postassignment\\Postassignment\\Postassignment.csproj",
       "projectName": "Postassignment",
-      "projectPath": "C:\\Users\\moaya\\source\\repos\\Postassignment\\Postassignment\\Postassignment.csproj",
+      "projectPath": "E:\\Internship-2020\\copy\\Assinment\\Asp.net\\Postassignment\\Postassignment\\Postassignment.csproj",
       "packagesPath": "C:\\Users\\moaya\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\moaya\\source\\repos\\Postassignment\\Postassignment\\obj\\",
+      "outputPath": "E:\\Internship-2020\\copy\\Assinment\\Asp.net\\Postassignment\\Postassignment\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\moaya\\AppData\\Roaming\\NuGet\\NuGet.Config",

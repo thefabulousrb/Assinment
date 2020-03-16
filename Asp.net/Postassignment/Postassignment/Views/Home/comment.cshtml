@@ -18,14 +18,14 @@
 <hr />
              
                  <h2>Post</h2>
-                 <h6>postid:@Model.newpost.p_id</h6>
+                 <h6>post_no:@Model.newpost.p_id</h6>
                  <h6>postby:@Model.newpost.P_user</h6>
                  <h6>content:@Model.newpost.p_content</h6>
                  <g3>Comments</g3>
                  @foreach (var comment in Model.newpost.comments)
                  {
 <div class="post" style="height: 115px;width: 400px">
-    <div style="margin-left:10px;margin-top:10px;">
+    <div style="margin-left:10px;margin-top:20px;position:static">
         <h6>@comment.commentby</h6>
         <p>@comment.comment</p>
     </div>
