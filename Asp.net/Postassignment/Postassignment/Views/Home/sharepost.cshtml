@@ -1,0 +1,9 @@
+﻿@model Postassignment.ViewModels.Homelist
+<form method="post" asp-action="sharepost" asp-controller="home" asp-route-id=@Model.newpost.p_id>
+
+    <div class="form-group">
+        <label>Enter your name</label>
+        <input type="text" class="form-control" id="Username" placeholder="Enter name" required value="share" asp-for="S_user">
+    </div>
+    <button  class="btn btn-primary" type="submit"></button>
+</form>

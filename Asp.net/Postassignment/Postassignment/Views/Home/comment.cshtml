@@ -1,0 +1,41 @@
+﻿@model Postassignment.ViewModels.Homelist
+<html>
+    <head>
+    </head>
+<body>
+    <form  asp-action="makecomment" asp-controller="home" asp-route-id="@Model.newpost.p_id"  method="post">
+        <div class="form-group">
+            <div class="form-group">
+                <label>Enter your name</label>
+                <input type="text" class="form-control" id="Username" placeholder="Enter name" required asp-for="C_user">
+            </div>
+            <label for="comment">Comment:</label>
+            <textarea class="form-control" rows="5" id="comment" placeholder="write your comment" asp-for="comment" required></textarea>
+            <button style="width:100px;margin-left:90%;margin-top:10px;" type="submit" class="btn btn-primary">Add comment</button>
+
+        </div>
+    </form>
+<hr />
+             
+                 <h2>Post</h2>
+                 <h6>postid:@Model.newpost.p_id</h6>
+                 <h6>postby:@Model.newpost.P_user</h6>
+                 <h6>content:@Model.newpost.p_content</h6>
+                 <g3>Comments</g3>
+                 @foreach (var comment in Model.newpost.comments)
+                 {
+<div class="post" style="height: 115px;width: 400px">
+    <div style="margin-left:10px;margin-top:10px;position:static">
+        <h6>@comment.commentby</h6>
+        <p>@comment.comment</p>
+    </div>
+    <div class="button" style="position:static; margin-left:80px;margin-top:10px;">
+
+        <a style="border:solid white 1px;border-radius:50px" button" id="like" asp-action="likecomment" asp-controller="home" asp-route-id="@Model.newpost.p_id" asp-route-cid="@comment.commentid">Like(@comment.Like) </a>
+        <a style="border:solid white 1px;border-radius:50px" class="button" id="share" asp-controller="home" asp-action="sharecomment" asp-route-id="@Model.newpost.p_id" asp-route-cid="@comment.commentid" >Share </a>
+
+    </div>
+</div>
+                 }
+
+</body></html>
