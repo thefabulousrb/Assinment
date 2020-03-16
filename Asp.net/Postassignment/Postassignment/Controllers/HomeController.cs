@@ -157,13 +157,13 @@ namespace Postassignment.Controllers
             homelist.newpost = _post.getallposts().FirstOrDefault(c => c.p_id == id);
             var Id = homelist.newpost.comments.Max(c => c.commentid) + 1;
             var oldcomment = homelist.newpost.comments.Find(c => c.commentid == cid);
-            var comment = new Icomment() {
-                commentid = Id,
-                comment = oldcomment.comment,
-                commentby = "Comment Shared as comment by: " + homelst.S_user + " src: " + oldcomment.commentby,
+            //var comment = new Icomment() {
+            //    commentid = Id,
+            //    comment = oldcomment.comment,
+            //    commentby = "Comment Shared as comment by: " + homelst.S_user + " src: " + oldcomment.commentby,
             
-            };
-            homelist.newpost.comments.Add(comment);
+            //};
+           // homelist.newpost.comments.Add(comment);
             post.p_id= _post.getallposts().Max(c => c.p_id) + 1;
             post.p_content = oldcomment.comment;
             post.P_user = "Comment Shared as post by: " + homelst.S_user + " src: " + oldcomment.commentby;
