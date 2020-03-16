@@ -128,7 +128,7 @@ namespace Postassignment.Controllers
             {
                 p_id = Id,
                 p_content = oldpost.p_content,
-                P_user = "shared by:"+homelist.S_user+"\n posted by"+oldpost.P_user,
+                P_user = "Post shared by:"+homelist.S_user+" src:"+oldpost.P_user,
                 comments = new List<Icomment>(),
                 like = 0
 
@@ -153,19 +153,31 @@ namespace Postassignment.Controllers
         public ViewResult sharecomment(int id,int cid,Homelist homelst)
         {
             Homelist homelist = new Homelist();
+            var post = new post();
             homelist.newpost = _post.getallposts().FirstOrDefault(c => c.p_id == id);
             var Id = homelist.newpost.comments.Max(c => c.commentid) + 1;
             var oldcomment = homelist.newpost.comments.Find(c => c.commentid == cid);
             var comment = new Icomment() {
                 commentid = Id,
                 comment = oldcomment.comment,
-                commentby = "Shared by: " + homelst.S_user + "& commented by: " + oldcomment.commentby,
+                commentby = "Comment Shared as comment by: " + homelst.S_user + " src: " + oldcomment.commentby,
             
             };
             homelist.newpost.comments.Add(comment);
+            post.p_id= _post.getallposts().Max(c => c.p_id) + 1;
+            post.p_content = oldcomment.comment;
+            post.P_user = "Comment Shared as post by: " + homelst.S_user + " src: " + oldcomment.commentby;
+            post.comments = new List<Icomment>();
+            post.like = 0;
+            homelist.newpost = _post.addpost(post);
+            homelist.allposts = _post.getallposts();
+
+        
+            
+             return View("makepost", homelist);
             
              
-             return View("comment",homelist);
+    
 
         }
 

@@ -1,9 +1,12 @@
 ﻿@model Postassignment.ViewModels.Homelist
-<form method="post" asp-action="sharecomment" asp-controller="home" asp-route-id=@Model.newpost.p_id asp-route-cid=@Model.c_id>
+    <form method="post" asp-action="sharecomment" asp-controller="home" asp-route-id=@Model.newpost.p_id asp-route-cid=@Model.c_id>
+        <div class="alert-danger">Note:this will share your comment as post as well as comment</div>
+        <div class="form-group">
+            <label>Enter your name</label>
+            <input type="text" class="form-control" id="Username" placeholder="Enter name" asp-for="S_user">
+            <button class="btn btn-primary" type="submit" style="margin-left:93.5%;margin-top:10px;">Share</button>
 
-    <div class="form-group">
-        <label>Enter your name</label>
-        <input type="text" class="form-control" id="Username" placeholder="Enter name"  asp-for="S_user">
-    </div>
-    <button  class="btn btn-primary" type="submit">Share</button>
-</form>
+        </div>
+
+      
+    </form>
