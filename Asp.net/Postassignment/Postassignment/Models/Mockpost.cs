@@ -15,8 +15,6 @@ namespace Postassignment.Models
         new post {P_user="ayaz", p_id = 1, p_content = "1st post", like=0,comments=new List<Icomment>{ new Icomment {comment="hello",commentby="ayaz",Like=0,commentid
         =1},new Icomment {comment="hello",commentby="ayaz",Like=0,commentid=2 } } },
         new post {P_user="ayaz", p_id = 2, p_content = "2nd post",like=0,comments=new List<Icomment>{ new Icomment {comment="hello",commentby="ayaz", Like = 0,commentid=3 } } }, 
-        new post { P_user="ayaz",p_id = 3, p_content = "3rd post",like=0,comments=new List<Icomment>{ new Icomment {comment="hello",commentby="ayaz", Like = 0, commentid = 4 } } },
-        new post { P_user="ayaz",p_id = 4, p_content = "4th post",like=0,comments=new List<Icomment>{ new Icomment {comment="hello",commentby="ayaz", Like = 0, commentid = 5 } } },
         };
         }
         public post addpost(post post)

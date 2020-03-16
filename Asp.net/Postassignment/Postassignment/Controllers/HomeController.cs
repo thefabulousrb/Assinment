@@ -79,7 +79,9 @@ namespace Postassignment.Controllers
         public ViewResult makecomment(Homelist homelistmodelview,int id)
         {
             var post = _post.getallposts().FirstOrDefault(c => c.p_id == id );
-            var Id = post.comments.Max(c => c.commentid)+1;
+          
+            var Id = 3;
+            id++;
             var newcomment = new Icomment()
             {
                 commentid = Id,
@@ -91,7 +93,7 @@ namespace Postassignment.Controllers
            
             post.comments.Add(newcomment);
             homelistmodelview.newpost = post;
-            return View("comment", homelistmodelview);
+            return View("comment",homelistmodelview);
 
         
         }
