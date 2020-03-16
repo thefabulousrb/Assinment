@@ -30,7 +30,7 @@
             <h6>@post.P_user</h6>
             <p>@post.p_content</p>
 
-            <div class="button" style="position:static; margin-left:40px;margin-top:50px;">
+            <div class="button" style="position:static; margin-left:40px;margin-top:10px;">
 
                 <a style="border:solid white 1px;border-radius:50px" button" id="like" asp-controller="home" asp-action="addlike" asp-route-id="@post.p_id">Like(@post.like) </a>
                 <a style="border:solid white 1px;border-radius:50px" class="button" id="comment" asp-controller="home" asp-action="makecomment" asp-route-id="@post.p_id">comment </a>

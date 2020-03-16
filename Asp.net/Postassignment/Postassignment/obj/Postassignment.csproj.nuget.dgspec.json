@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Internship-2020\\copy\\Assinment\\Asp.net\\Postassignment\\Postassignment\\Postassignment.csproj": {}
+    "C:\\Users\\moaya\\source\\repos\\Postassignment\\Postassignment\\Postassignment.csproj": {}
   },
   "projects": {
-    "E:\\Internship-2020\\copy\\Assinment\\Asp.net\\Postassignment\\Postassignment\\Postassignment.csproj": {
+    "C:\\Users\\moaya\\source\\repos\\Postassignment\\Postassignment\\Postassignment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Internship-2020\\copy\\Assinment\\Asp.net\\Postassignment\\Postassignment\\Postassignment.csproj",
+        "projectUniqueName": "C:\\Users\\moaya\\source\\repos\\Postassignment\\Postassignment\\Postassignment.csproj",
         "projectName": "Postassignment",
-        "projectPath": "E:\\Internship-2020\\copy\\Assinment\\Asp.net\\Postassignment\\Postassignment\\Postassignment.csproj",
+        "projectPath": "C:\\Users\\moaya\\source\\repos\\Postassignment\\Postassignment\\Postassignment.csproj",
         "packagesPath": "C:\\Users\\moaya\\.nuget\\packages\\",
-        "outputPath": "E:\\Internship-2020\\copy\\Assinment\\Asp.net\\Postassignment\\Postassignment\\obj\\",
+        "outputPath": "C:\\Users\\moaya\\source\\repos\\Postassignment\\Postassignment\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\moaya\\AppData\\Roaming\\NuGet\\NuGet.Config",

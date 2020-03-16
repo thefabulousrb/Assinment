@@ -1,0 +1,18 @@
+﻿@model Postassignment.Models.post
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+    </head>
+    <body>
+        
+        <p>@Model.p_content</p>
+        @*@foreach(var comment in Model.comments)
+        {
+            <h5>@comment.comment</h5>
+            <h5>@comment.commentby</h5>
+            <h6>@comment.isLiked</h6>
+        }*@
+
+        </body>
+    </html>

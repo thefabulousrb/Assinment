@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Postassignment.Models.post>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>Posts</h1>
+    
+
+        @foreach (var post in Model)
+        {
+        <div class="post" style="height: 160px;width: 400px">
+
+            <a asp-action="details" asp-controller="home" asp-route-id="@post.p_id"><h6 align="center">Post-no:@post.p_id</h6></a>
+
+            <h6>@post.P_user</h6>
+            <p>@post.p_content</p>
+
+            <div class="button" style="position:static; margin-left:40px;margin-top:10px;">
+
+                <a style="border:solid white 1px;border-radius:50px" button" id="like" >Like </a>
+                <a style="border:solid white 1px;border-radius:50px" class="button" id="comment" asp-controller="home" asp-action="makecomment" asp-route-id="@post.p_id" as>comment </a>
+                <a style="border:solid white 1px;border-radius:50px" class="button" id="share" asp-controller="home" asp-action="sharepost" asp-route-id="@post.p_id">Share </a>
+
+            </div>
+            </div>
+       
+
+         }
+
+            
+
+        
+   
+   <a asp-controller="home" asp-action="makepost">another page</a>
+    </body>
+</html>
