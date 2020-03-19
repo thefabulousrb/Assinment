@@ -1,0 +1,47 @@
+Questions:
+
+You want to add search functionality in your application may I know what details you want to show as result?
+Why you want to add this functionality?
+What would you like to search?
+What result do you expect?
+How would you like to search details?
+On which basis would you like to search?
+Where is data stored?
+Who is going to Use this application?
+Is there different categories of users?If yes then which are they?
+Would you like to ristrict number of searches for particular users?
+Is this functionality important? if yes then why?
+If you had a magicwand how would you implement this functionality?
+Do you want to search things using filter parameters?
+How would you like results to be shown?What should be the view type?
+Would you like to sort results using Different parameters?
+Would you like animation and loading icons while fetching and displaying data?
+Does search depend on any other functonality i.e login?
+Whould you like to have users search history?
+Howmany user should be allowed to access application at once?
+Is this application accesible on all type of devices?If no then specify
+What response time you expect?
+What will be securtity measures for authentication?
+Howmany processing errors are acceptable?
+How would you know that functionality is implemented sucessfully?
+Howmuch time do you expect?
+
+
+Assumption
+User will be able to search jobs using searchbox.
+User can also use filter function to search jobs in desired location.
+User will be able to search for companies registerd on application and connect with them.
+User can also connect with other users on the application by searching them using their respective usernames.
+User can apply for jobs directly from the obtained search results.
+user need to login first.
+Animation and design will provide user an amzing user experience.
+User can also sort results according to his/her need.
+User will be able to check his search history for records.
+
+
+
+ 
+
+
+
+
