@@ -34,7 +34,7 @@ _listFilter = '';
 
 Delete(emp:Employee){
 
-var val=confirm("Do you really want to Detete"+emp.name);
+var val=confirm("Do you really want to Detete "+emp.name);
   if(val==true)
   {
     this.dataservice.DeleteEmpleave(+emp.id).subscribe(fun=>console.log("deleted"));

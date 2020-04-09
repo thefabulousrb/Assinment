@@ -50,6 +50,9 @@ set listFilterL(value: string) {
         var day=((Enddate.getTime()-startdate.getTime())/(1000*3600*24))+1;
         this.Leavelist[i].days=day;
          this.Leavelist[i].employeename=this.Employeelist.find(c=>c.id==this.Leavelist[i].employeeid).name;
+
+
+
          this.Leavelist[i].leavetype=this.Leavecofig.find(c=>c.id==this.Leavelist[i].leaveId).name;
          this.Leavelist[i].Leave=(this.Leavecofig.find(c=>c.id==this.Leavelist[i].leaveId).maxallowed)-this.Leavelist[i].days;
          var leave=this.Leavecofig.find(c=>c.id==this.Leavelist[i].leaveId);

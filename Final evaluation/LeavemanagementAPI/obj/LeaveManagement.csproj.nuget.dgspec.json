@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Leave_management\\LeavemanagementAPI\\LeaveManagement.csproj": {}
+    "E:\\Internship-2020\\copy\\Assinment\\Final evaluation\\LeavemanagementAPI\\LeaveManagement.csproj": {}
   },
   "projects": {
-    "E:\\Leave_management\\LeavemanagementAPI\\LeaveManagement.csproj": {
+    "E:\\Internship-2020\\copy\\Assinment\\Final evaluation\\LeavemanagementAPI\\LeaveManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Leave_management\\LeavemanagementAPI\\LeaveManagement.csproj",
+        "projectUniqueName": "E:\\Internship-2020\\copy\\Assinment\\Final evaluation\\LeavemanagementAPI\\LeaveManagement.csproj",
         "projectName": "LeaveManagement",
-        "projectPath": "E:\\Leave_management\\LeavemanagementAPI\\LeaveManagement.csproj",
+        "projectPath": "E:\\Internship-2020\\copy\\Assinment\\Final evaluation\\LeavemanagementAPI\\LeaveManagement.csproj",
         "packagesPath": "C:\\Users\\moaya\\.nuget\\packages\\",
-        "outputPath": "E:\\Leave_management\\LeavemanagementAPI\\obj\\",
+        "outputPath": "E:\\Internship-2020\\copy\\Assinment\\Final evaluation\\LeavemanagementAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\moaya\\AppData\\Roaming\\NuGet\\NuGet.Config",

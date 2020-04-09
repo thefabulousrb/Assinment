@@ -23,7 +23,7 @@ namespace LeavemanagementAPI.Controllers
                  var empleavelist=_datacontext.EmployeeLeave.ToList();
                  return Ok(empleavelist);
              }
-
+//this methid will give you all the leaves of particular employee
               [HttpGet("{id}")]
              public ActionResult<IEnumerable<EmployeeLeave>> Get(int id){
                 var list=new List<EmployeeLeave>();
@@ -81,6 +81,30 @@ namespace LeavemanagementAPI.Controllers
                  _datacontext.SaveChanges();
                  return _datacontext.EmployeeLeave;
              }
+         [HttpDelete("leave/{id}")]
+             public ActionResult<IEnumerable<EmployeeLeave>> Delete(int id,int id2){
+                 
+                var employeeleave=_datacontext.EmployeeLeave.ToList();
+                 for(int i=0;i<employeeleave.Count ;i++){
+
+                        if(employeeleave[i].LeaveId==id){
+                            _datacontext.EmployeeLeave.Remove(employeeleave[i]);
+                        }
+
+                     
+                 }
+                 _datacontext.SaveChanges();
+                 return _datacontext.EmployeeLeave;
+             }
+             [HttpDelete("empleave/{id}")]
+             public ActionResult<EmployeeLeave> Delete(int id,string id2){
+                 
+                var employeeleave=_datacontext.EmployeeLeave.ToList().Find(c=>c.id==id);
+                _datacontext.EmployeeLeave.Remove(employeeleave);
+                 _datacontext.SaveChanges();
+                 return employeeleave;
+             }
+
 
 
             

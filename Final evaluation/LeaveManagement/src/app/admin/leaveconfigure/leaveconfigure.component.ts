@@ -19,11 +19,12 @@ Leavelist:Leave[];
   }
 
   Delete(leave:Leave){
-
+      alert("This will delete all the leaves of type "+leave.name);
     var val=confirm("Do you really want to Detete "+leave.name);
     if(val==true)
     {
-     this.dataservice.Deleteleave(leave.id).subscribe(data=>console.log(leave.name+"Leave deted"));
+      this.dataservice.DeleteEmpleavebyleaveid(leave.id).subscribe(data=>console.log("deleted"));
+      this.dataservice.Deleteleave(leave.id).subscribe(data=>console.log(leave.name+"Leave deted"));
       window.location.reload();
     }
 

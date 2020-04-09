@@ -76,6 +76,10 @@ DeleteEmpleave(id:number):Observable<EmployeeLeave>{
   return this.http.delete<EmployeeLeave>(this.Employeeleave+"/"+id);
 
 }
+DeleteEmpleavebyleaveid(id:number):Observable<EmployeeLeave>{
+  return this.http.delete<EmployeeLeave>(this.Employeeleave+"/leave/"+id);
+
+}
 getleavebyid(id:number):Observable<Leave>{
   return this.http.get<Leave>(this.Leave+"/"+id);
 
