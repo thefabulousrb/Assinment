@@ -1,0 +1,65 @@
+<div class='card'>
+  <div class='card-header'>
+    <h4>Edit Employee</h4>
+  </div>
+<div id="addemployee">
+  <form #form=ngForm>
+    <div class="form-group row">
+      <label for="name" class="col-sm-2 col-form-label">Name</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="name" pattern="[a-zA-Z][a-zA-Z ]+[a-zA-Z]$" name="Name" placeholder="Employee Name" minlength="3" maxlength=
+        "20" [(ngModel)]="Employee.name" #name="ngModel" #name="ngModel" required [class.field-error]="name.invalid && name.touched">
+      </div>
+    </div>
+    <div class="alert alert-danger" [hidden]="name.valid || name.untouched" id="error">
+      enter valid name which only contains alphabets and has atleast 3 charaters and atmost 20
+    </div>
+
+    <div class="form-group row">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="inputEmail3" placeholder="Email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" name="Email" [(ngModel)]="Employee.email"  #email="ngModel" required [class.field-error]="email.invalid && email.touched">
+      </div>
+    </div>
+    <div class="alert alert-danger" [hidden]="email.valid || email.untouched" id="error">
+      enter valid email
+    </div>
+    <div class="form-group row">
+      <label for="name" class="col-sm-2 col-form-label">Salary</label>
+      <div class="col-sm-10">
+        <input type="number" min="10000" max="100000" class="form-control" id="name" placeholder="Employee salary" name="Leavedays" [(ngModel)]="Employee.salary" #days="ngModel" required [class.field-error]="days.invalid && days.touched">
+      </div>
+    </div>
+    <div class="alert alert-danger" [hidden]="days.valid || days.untouched" id="error">
+      Days should between 10000 and 100000
+    </div>
+
+    <div class="form-group row">
+      <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+      <div class="col-sm-10">
+        <input type="password" class="form-control" id="inputPassword3" placeholder="Password" name="pass" #pass="ngModel" [(ngModel)]="Employee.password" required [class.field-error]="pass.invalid && pass.touched" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+      </div>
+    </div>
+    <div class="alert alert-danger" [hidden]="pass.valid || pass.untouched" id="error">
+     Password Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters
+   </div>
+
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Date of birth</label>
+      <input style="margin-left: 1.5%; border-radius:5px;border:solid lightgray 1px;height:35px; " type="date" name="dob" [(ngModel)]="Employee.dob" #date="ngModel"  required [class.field-error]="date.invalid && date.touched">
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Joining Date</label>
+      <input style="margin-left: 1.5%; border-radius:5px;border:solid lightgray 1px;height:35px; " type="date" name="doj" [(ngModel)]="Employee.doj"  #date2="ngModel" required [class.field-error]="date2.invalid && date2.touched">
+    </div>
+     <div class="form-group row">
+      <button class="btn btn-primary" style="margin-left: 90%;" (click)="Update()" [disabled]="!form.valid">Submit</button>
+    </div>
+
+    </form>
+
+</div><br>
+<div class='card-footer'>
+  &nbsp;<a class="btn btn-info" role="button" (click)="back()">back</a>
+</div>
+

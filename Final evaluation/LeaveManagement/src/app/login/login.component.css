@@ -1,0 +1,16 @@
+#loginbox{
+  border-radius: 10px;
+   border: solid teal 1px;
+    width:40%;
+    height:20%;
+    margin-left:30%;
+    margin-top:10%;
+    overflow: hidden;
+  }
+
+legend{
+  background-color: darkslategray;
+  color:white;
+}
+
+

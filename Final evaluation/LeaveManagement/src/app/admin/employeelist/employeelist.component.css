@@ -1,0 +1,39 @@
+
+table{
+
+  width: 70%;
+  margin-left: 15%;
+  text-align: center;
+
+}
+th{
+  background-color:darkslategrey;
+  color: azure;
+  height: 5px;
+  width:10%;
+
+}
+
+thead{
+  height: 10px;
+}
+tr:hover{
+  zoom: 115%;
+  background-color: lightcyan;
+}
+a{
+  width: 50%;
+}
+td{
+  border: solid lightgrey 1px;;
+
+}
+
+i{
+  margin-left: 5%;
+  text-align: center;
+  font-size: 25px;
+  margin-top: .2%;
+}
+
+

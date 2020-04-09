@@ -1,0 +1,17 @@
+#addemployee{
+
+  width: 75%;
+  border: solid teal 1px;
+  border-radius:10px ;
+  margin-left: 5%;
+  margin-top: 2.5%;
+}
+form{
+  width: 90%;
+  margin-left:5%;
+}
+
+.field-error{
+
+  border:solid red 1px;
+}

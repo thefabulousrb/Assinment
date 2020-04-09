@@ -1,0 +1,36 @@
+<div class='card'>
+  <div class='card-header'>
+    <h4>Add Leave</h4>
+  </div>
+<div id="addemployee">
+
+    <form #form="ngForm">
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Leave type</label>
+        <select class="form-control" id="exampleFormControlSelect1" name="Leave.id" [(ngModel)]="Leave.leavetype" #name="ngModel" required [class.field-error]="name.invalid && name.touched">
+          <option>--select--</option>
+          <option *ngFor="let leave of Leaves">{{leave.name}}</option>
+
+        </select>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">From date</label>
+        <input style="margin-left: 1.5%; border-radius:5px;border:solid lightgray 1px;height:35px; " type="date" #date="ngModel" name="startdate"[(ngModel)]="Leave.startdate" required  [class.field-error]="date.invalid && date.touched">
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">To date</label>
+        <input style="margin-left: 1.5%; border-radius:5px;border:solid lightgray 1px;height:35px; " type="date" name="enddate" [(ngModel)]="Leave.enddate" required>
+      </div>
+
+
+      <div class="form-group row">
+        <button class="btn btn-primary" style="margin-left: 85%;" (click)="addleave(form)" [disabled]="!form.valid">Submit</button>
+
+</div>
+</form>
+
+</div>
+<br>
+<div class='card-footer'>
+  &nbsp;<a class="btn btn-info" role="button" (click)="back()">back</a>
+</div>

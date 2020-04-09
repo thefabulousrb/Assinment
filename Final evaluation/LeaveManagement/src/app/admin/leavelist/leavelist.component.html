@@ -1,0 +1,40 @@
+<div class='card'>
+  <div class='card-header'>
+    <h4>Leavelist</h4>
+  </div>
+  <hr>
+  <div class="form-group row">
+    <i class="fa fa-search" aria-hidden="true"></i><input type="search" style="border-radius:5px;border:solid cadetblue 1px;height:35px;" placeholder="Filter by Employeename" [(ngModel)]="listFilter"> <i class="fa fa-search" aria-hidden="true"></i><input type="search" style="border-radius:5px;border:solid cadetblue 1px;height:35px;" placeholder="Filter by leave type" [(ngModel)]="listFilterL">
+
+
+
+  </div>
+  <hr>
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Employee name</th>
+      <th scope="col">Start date</th>
+      <th scope="col">End date</th>
+      <th scope="col">Leave type</th>
+      <th scope="col">Number of days</th>
+      <th scope="col">Leave</th>
+      <th scope="col">status</th>
+      <th scope="col" style="width:23%;">Action</th>
+    </tr>
+</thead>
+<tbody><tr *ngFor="let empleave of Filteredlist  | paginate: { itemsPerPage: 5, currentPage: p}">
+    <td>{{empleave.employeename}}</td>
+    <td>{{empleave.startdate}}</td>
+    <td>{{empleave.enddate}}</td>
+    <td>{{empleave.leavetype }}</td>
+    <td>{{empleave.days}}</td>
+    <td>{{empleave.Leave}}</td>
+    <td>{{empleave.status}}</td>
+    <td><select name={{empleave.id}} [(ngModel)]="empleave.status"  ><option>Approve</option><option>Reject</option></select>&nbsp;&nbsp;&nbsp;<button style="background-color:forestgreen"class="btn btn-primary" (click)="Action(empleave)"><i class="fa fa-check-square" aria-hidden="true"></i> </button></td>
+
+</tr>
+
+</tbody>
+</table>
+<pagination-controls (pageChange)="p = $event"></pagination-controls>

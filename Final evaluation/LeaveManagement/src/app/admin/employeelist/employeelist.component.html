@@ -1,0 +1,29 @@
+<div class='card'>
+  <div class='card-header'>
+    <h4>Employeelist</h4>
+  </div>
+  <hr>
+  <div class="form-group row">
+    <i class="fa fa-search" aria-hidden="true"></i>&nbsp;<input type="search" placeholder="Enter name" style="border-radius:5px;border:solid lightgray 1px;height:35px;" [(ngModel)]="listFilter">
+    <a class="btn btn-primary" [routerLink]="['/Adminlist/Addemployee']" routerLinkActive="router-link-active"  role="button" style="margin-left:55%;width:10%">Add employee</a>
+</div>
+<hr>
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Employee name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Birth date</th>
+      <th scope="col">Joining date</th>
+      <th scope="col">Salary</th>
+      <th scope="col">Action</th>
+    </tr>
+    <tr *ngFor="let emp of Filteredlist">
+      <td>{{emp.name}}</td>
+      <td>{{emp.email}}</td>
+      <td>{{emp.dob}}</td>
+      <td>{{emp.doj}}</td>
+      <td>{{emp.salary}}</td>
+      <td><a [routerLink]="['Edit',emp.id]" routerLinkActive="router-link-active"  role="button"><i style="color: darkgreen;font-size: 30px;" class="fa fa-edit"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;<a role="button"><i style="color: red;font-size: 30px;" class="fa fa-trash" (click)="Delete(emp)"></i></a></td>
+    </tr>
+  </thead>

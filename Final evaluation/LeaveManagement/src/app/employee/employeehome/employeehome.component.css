@@ -1,0 +1,41 @@
+#verticle
+		{
+		 	list-style: none;
+			padding:0px;
+			margin:0px;
+			height:1000px;
+			width:200px;
+			background-color:lightcyan;
+			opacity: 95%;
+      float: left;
+      position: fixed;
+
+		}
+
+		#verticle li{
+				width: 200px;
+				border-right:solid white 2px;
+				stroke: currentColor;
+				line-height:40px;
+				text-align: center;
+				opacity: 90%;
+				border-bottom: dashed white 1px;
+
+			}
+		#verticle li a{
+			display: block;
+			text-decoration: none;
+      color:black;
+      border-bottom: solid darkslategrey 10px;
+      border-radius: 50px;
+		}
+		ul li :hover{
+      background-color:teal;
+			border:solid white 1px;
+			border-radius: 10px;
+		}
+    #verticle li .active{
+
+      background-color:darkcyan;
+      border-bottom-color:black;
+    }

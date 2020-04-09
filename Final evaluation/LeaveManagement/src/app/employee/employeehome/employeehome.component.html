@@ -1,0 +1,12 @@
+<div style="float: left;">
+  <ul id="verticle">
+    <li><a [routerLink]="['Employeeprofile',id]" routerLinkActive="active" >My Profile</a></li>
+    <li><a [routerLink]="['Employeeleave',id]" routerLinkActive="active" >Leaves</a></li>
+    <li><a [routerLink]="['Employeeaddleave',id]" routerLinkActive="active" >Add Leave</a></li>
+    <li><a [routerLink]="['/Logout']" routerLinkActive="active" >Logout</a></li>
+
+  </ul>
+  </div>
+  <div style="width:86.5%;float:right;"  [@slideInAnimation]="o.isActivated ? o.activatedRoute : ''">
+    <router-outlet #o="outlet"></router-outlet>
+  </div>

@@ -1,0 +1,35 @@
+<div class='card'>
+  <div class='card-header'>
+    <h4>Leaves</h4>
+  </div>
+<div id="addemployee">
+  <hr>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label" *ngFor="let leave of Leaveconfig"><b>{{leave.name}}:{{leave.maxallowed}}</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </div >
+    <div style="margin-left:1%;"><button class="btn btn-primary" (click)="Addleave()">Add Leave</button></div>
+
+
+
+  <hr>
+  <div>  <table class="table" id="employeeleave">
+  <thead>
+    <tr>
+      <th scope="col">Leave Dates</th>
+      <th scope="col">Leave Type</th>
+      <th scope="col">No of days</th>
+      <th scope="col">Status</th>
+    </tr>
+    <tr *ngFor="let leave of employeeleaves">
+      <td>{{leave.startdate}} <b>To</b> {{leave.enddate}}</td>
+      <td>{{Leaveconfig |employee:leave.leaveId}}</td>
+      <td>{{leave.days}}</td>
+      <td>{{leave.status}}</td>
+    </tr>
+
+  </thead>
+  </table>
+</div>
+
+
+
