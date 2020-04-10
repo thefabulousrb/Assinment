@@ -16,6 +16,7 @@ import { EmployeeeditComponent } from './admin/employeeedit/employeeedit.compone
 import { EditleaveComponent } from './admin/editleave/editleave.component';
 
 
+
 const routes: Routes = [{path:"",component:LoginComponent},
 {path:"Logout",component:LoginComponent},
 {path:"Adminlist",component:AdminlistComponent,

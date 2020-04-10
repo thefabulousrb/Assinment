@@ -40,23 +40,24 @@ set listFilterL(value: string) {
   ngOnInit(): void {
     this.dataservice.getallleave().subscribe(list=>this.Leavecofig=list);
     this.dataservice.getallemployee().subscribe(list=>this.Employeelist=list);
-    this.dataservice.getallempleave().subscribe(list=>{this.Leavelist=list;this.Filteredlist=list;
 
-      for(var i=0;i<this.Leavelist.length;i++){
+        this.dataservice.getallempleave().subscribe(list=>{this.Leavelist=list;this.Filteredlist=list;
 
-        var startdate=new Date(this.Leavelist[i].startdate);
-        var Enddate=new Date(this.Leavelist[i].enddate);
+      for(var i=0;i<this.Filteredlist.length;i++){
+
+        var startdate=new Date(this.Filteredlist[i].startdate);
+        var Enddate=new Date(this.Filteredlist[i].enddate);
 
         var day=((Enddate.getTime()-startdate.getTime())/(1000*3600*24))+1;
-        this.Leavelist[i].days=day;
-         this.Leavelist[i].employeename=this.Employeelist.find(c=>c.id==this.Leavelist[i].employeeid).name;
+        this.Filteredlist[i].days=day;
+         this.Filteredlist[i].employeename=this.Employeelist.find(c=>c.id==this.Filteredlist[i].employeeid).name;
 
 
 
-         this.Leavelist[i].leavetype=this.Leavecofig.find(c=>c.id==this.Leavelist[i].leaveId).name;
-         this.Leavelist[i].Leave=(this.Leavecofig.find(c=>c.id==this.Leavelist[i].leaveId).maxallowed)-this.Leavelist[i].days;
-         var leave=this.Leavecofig.find(c=>c.id==this.Leavelist[i].leaveId);
-           leave.maxallowed=leave.maxallowed-this.Leavelist[i].days;
+         this.Filteredlist[i].leavetype=this.Leavecofig.find(c=>c.id==this.Filteredlist[i].leaveId).name;
+         this.Filteredlist[i].Leave=(this.Leavecofig.find(c=>c.id==this.Filteredlist[i].leaveId).maxallowed)-this.Filteredlist[i].days;
+         var leave=this.Leavecofig.find(c=>c.id==this.Filteredlist[i].leaveId);
+           leave.maxallowed=leave.maxallowed-this.Filteredlist[i].days;
 
  }});
 }
@@ -80,4 +81,9 @@ set listFilterL(value: string) {
   }
 
 
-}
+
+
+  }
+
+
+
